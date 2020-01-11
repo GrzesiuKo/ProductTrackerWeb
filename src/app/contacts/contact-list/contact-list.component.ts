@@ -23,12 +23,6 @@ export class ContactListComponent implements OnInit {
       .getContacts()
       .then((contacts: Contact[]) => {
         this.contacts = contacts.map((contact) => {
-          if (!contact.phone) {
-            contact.phone = {
-              mobile: '',
-              work: ''
-            };
-          }
           return contact;
         });
       });
@@ -46,12 +40,8 @@ export class ContactListComponent implements OnInit {
 
   createNewContact() {
     const contact: Contact = {
-      name: '',
-      email: '',
-      phone: {
-        work: '',
-        mobile: ''
-      }
+      barcode: '',
+      description: '',
     };
 
     // By default, a newly-created contact will have the selected state.
