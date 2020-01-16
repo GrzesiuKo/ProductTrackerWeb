@@ -6,7 +6,7 @@
           *ngFor="let contact of contacts"
           (click)="selectContact(contact)"
           [class.active]="contact === selectedContact">
-        {{contact.barcode}}
+        {{contact.description}}
       </li>
     </ul>
     <button class="btn btn-warning" (click)="createNewContact()">New</button>
