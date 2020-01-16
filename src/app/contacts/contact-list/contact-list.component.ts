@@ -42,6 +42,7 @@ export class ContactListComponent implements OnInit {
     const contact: Contact = {
       barcode: '',
       description: '',
+      count: ''
     };
 
     // By default, a newly-created contact will have the selected state.

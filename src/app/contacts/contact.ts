@@ -3,4 +3,5 @@ export class Contact {
   _id?: string;
   barcode: string;
   description: string;
+  count: string;
 }
